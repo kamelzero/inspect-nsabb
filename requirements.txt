@@ -1,0 +1,7 @@
+ipykernel
+inspect-ai
+huggingface-hub
+datasets
+openai
+anthropic
+google-genai
