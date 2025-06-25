@@ -4,9 +4,8 @@ from datasets import Dataset, DatasetDict
 from huggingface_hub import create_repo, delete_repo
 
 def prepare_dataset(task_data, split="validation"):
-    processed_data = []
     # Create dataset and wrap it in DatasetDict the split name
-    dataset = Dataset.from_list(processed_data)
+    dataset = Dataset.from_list(task_data)
     dataset_dict = DatasetDict({split: dataset})
     return dataset_dict
 

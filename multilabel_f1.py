@@ -14,7 +14,8 @@ def multilabel_f1():
         model_set = normalize(model_output)
         target_set = normalize(target_text)
 
-        print(f"Model: {model_set} | Target: {target_set}")
+        print(f"Model output: {model_output} | Target: {target_text}")
+        print(f"Model output normed: {model_set} | Target normed: {target_set}")
 
         # Simple F1 calculation (can replace with better later)
         tp = len(model_set & target_set)
