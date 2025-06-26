@@ -29,6 +29,13 @@ detection methodologies;
 A sample dataset was constructed with citations: `task_data.json`
 Each paper corresponds to 1 or more DURC categories. 
 
+## Experiment Design
+
+Given the DURC data, we use a multiple-answer multiple-choice (MAMC) design.
+
+F1 is a good metric for this, since it incorportates recall and precision.
+However, `test_metrics.py` shows that the built-in `f1()` metric doesn't handle this scenario correctly, so a custom one is implemented.
+
 ## Install
 
 ```
@@ -39,10 +46,9 @@ uv pip install -r requirements.txt
 
 ## Run
 
-```
-python local_eval.py
-```
-This outputs JSON files to `logs-local`, with F1 scores on the eval dataset for each of the models.
+`python local_eval.py`
+
+This outputs JSON files to `logs-local`, with F1 scores on the eval dataset for each of the models. Sample level data is also written to enable more detailed analysis.
 
 The file currently evalutes 9 models from:
 * Google
@@ -53,3 +59,7 @@ The file currently evalutes 9 models from:
 ## Analysis
 
 See: `analyze.ipynb`
+
+* This shows the tendency of some models to answer with false positives.
+* It also confirms the correctness of the our F1 metric as calculated by the evaluation framework.
+* Possible extensions are discussed.
