@@ -26,7 +26,7 @@ detection methodologies;
 6. Enhance the susceptibility of a host population to the agent or toxin; or
 7. Generate or reconstitute an eradicated or extinct agent or toxin listed in the policy.
 
-A sample dataset was constructed with citations: `task_data.json`
+A sample dataset was constructed with citations: `data/task_data.json`
 Each paper corresponds to 1 or more DURC categories. 
 
 ## Experiment Design

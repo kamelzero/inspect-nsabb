@@ -11,7 +11,7 @@ def prepare_dataset(task_data, split="validation"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--task_data_path", type=str, default="task_data.json")
+    parser.add_argument("--task_data_path", type=str, default="data/task_data.json")
     parser.add_argument("--dataset_name", type=str, default="nsabb-mini-eval")
     parser.add_argument("--split", type=str, default='validation')
     parser.add_argument("--private", type=bool, default=False)
