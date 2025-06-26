@@ -1,13 +1,13 @@
 {
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_dAZDKKXkbmroLFhx65hmpE.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_SCgYmKJKE5sH6TEuKYmYNz.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "8ThR84amVXpPVh4z8b5vno",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "8uMX9tys3u5HZ7KD5CS8z3",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "dAZDKKXkbmroLFhx65hmpE",
+      "task_id": "SCgYmKJKE5sH6TEuKYmYNz",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -48,7 +48,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -94,7 +94,7 @@
           "metrics": {
             "accuracy": {
               "name": "accuracy",
-              "value": 0.8095238095238095,
+              "value": 0.7238095238095238,
               "params": {}
             }
           }
@@ -102,14 +102,14 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:43:15+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:05:41+03:00",
       "model_usage": {
         "google/gemini-2.5-pro-preview-03-25": {
           "input_tokens": 1192,
-          "output_tokens": 21,
-          "total_tokens": 46413,
-          "reasoning_tokens": 45200
+          "output_tokens": 22,
+          "total_tokens": 41647,
+          "reasoning_tokens": 40433
         }
       }
     },
@@ -126,7 +126,7 @@
             "sample_id": 2
           },
           {
-            "value": 1.0,
+            "value": 0.4,
             "sample_id": 3
           },
           {
@@ -149,15 +149,15 @@
       }
     ]
   },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_eTdmdyrpKvtSvcZGz7nEDm.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_UCPrwJ7YhtRg46vLtf3dAL.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "XyzUN7A8Z4ckp4jm2rYTr2",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "ME6dFi3hTtKkmBFw46PeHC",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "eTdmdyrpKvtSvcZGz7nEDm",
+      "task_id": "UCPrwJ7YhtRg46vLtf3dAL",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -198,7 +198,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -244,7 +244,7 @@
           "metrics": {
             "accuracy": {
               "name": "accuracy",
-              "value": 0.4404761904761905,
+              "value": 0.5515873015873016,
               "params": {}
             }
           }
@@ -252,15 +252,15 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:43:03+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:04:00+03:00",
       "model_usage": {
         "openai/o1": {
-          "input_tokens": 341,
-          "output_tokens": 3976,
-          "total_tokens": 4317,
+          "input_tokens": 511,
+          "output_tokens": 4493,
+          "total_tokens": 5004,
           "input_tokens_cache_read": 0,
-          "reasoning_tokens": 3968
+          "reasoning_tokens": 4480
         }
       }
     },
@@ -281,7 +281,7 @@
             "sample_id": 3
           },
           {
-            "value": 0.22222222222222224,
+            "value": 1.0,
             "sample_id": 4
           },
           {
@@ -300,15 +300,15 @@
       }
     ]
   },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_mkMZpTQ4hxpb2WiJg6E8qM.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_RsAFeQU2CTphf7SQPrRtXv.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "itxV8MvmpS2Y9NV4WnRtea",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "2mr5no9PcxqvRtT3CKo9oX",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "mkMZpTQ4hxpb2WiJg6E8qM",
+      "task_id": "RsAFeQU2CTphf7SQPrRtXv",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -349,7 +349,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -403,14 +403,14 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:54+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:58+03:00",
       "model_usage": {
         "google/gemini-2.5-flash-preview-05-20": {
           "input_tokens": 1192,
           "output_tokens": 21,
-          "total_tokens": 9205,
-          "reasoning_tokens": 7992
+          "total_tokens": 11513,
+          "reasoning_tokens": 10300
         }
       }
     },
@@ -450,15 +450,15 @@
       }
     ]
   },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_6tfBywjZDqy6HsXqL5bhJL.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_2xz9mBYTmgciDzc69djn79.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "ncCY6ppsPrBeuemYSWzzaC",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "3ioWaLZAQyaY939AKLipDT",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "6tfBywjZDqy6HsXqL5bhJL",
+      "task_id": "2xz9mBYTmgciDzc69djn79",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -499,7 +499,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -553,13 +553,13 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:32+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:44+03:00",
       "model_usage": {
         "anthropic/claude-sonnet-4-20250514": {
           "input_tokens": 1423,
-          "output_tokens": 1967,
-          "total_tokens": 3390,
+          "output_tokens": 1887,
+          "total_tokens": 3310,
           "input_tokens_cache_write": 0,
           "input_tokens_cache_read": 0
         }
@@ -601,316 +601,15 @@
       }
     ]
   },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_UUPmpyb9zVFfPgQ8kXxF9T.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_XfuDuxn7yTHpaUNJxaADp3.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "mfqv9c9uQxGxFiQVr5qngw",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "fgMA86Bm67RRK4v6KJHUc7",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "UUPmpyb9zVFfPgQ8kXxF9T",
-      "task_version": 0,
-      "task_file": "local_eval.py",
-      "task_registry_name": "task_nsabb_mini_eval_hf",
-      "task_attribs": {},
-      "task_args": {},
-      "task_args_passed": {},
-      "dataset": {
-        "name": "Kamel0/nsabb-mini-eval",
-        "location": "Kamel0/nsabb-mini-eval",
-        "samples": 7,
-        "sample_ids": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
-        ],
-        "shuffled": false
-      },
-      "model": "anthropic/claude-3-7-sonnet-latest",
-      "model_generate_config": {},
-      "model_args": {},
-      "config": {
-        "epochs": 1,
-        "epochs_reducer": [
-          "mean"
-        ],
-        "fail_on_error": true,
-        "max_tasks": 9,
-        "sandbox_cleanup": true,
-        "log_samples": true,
-        "log_realtime": true,
-        "log_images": true,
-        "score_display": true
-      },
-      "revision": {
-        "type": "git",
-        "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
-      },
-      "packages": {
-        "inspect_ai": "0.3.106"
-      },
-      "scorers": [
-        {
-          "name": "multilabel_f1",
-          "options": {},
-          "metrics": [
-            {
-              "name": "inspect_ai/accuracy",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Select all that apply. ANSWER:"
-          }
-        },
-        {
-          "solver": "multiple_choice",
-          "params": {}
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 7,
-      "completed_samples": 7,
-      "scores": [
-        {
-          "name": "multilabel_f1",
-          "scorer": "multilabel_f1",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 0.7380952380952381,
-              "params": {}
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:28+03:00",
-      "model_usage": {
-        "anthropic/claude-3-7-sonnet-latest": {
-          "input_tokens": 1423,
-          "output_tokens": 53,
-          "total_tokens": 1476,
-          "input_tokens_cache_write": 0,
-          "input_tokens_cache_read": 0
-        }
-      }
-    },
-    "reductions": [
-      {
-        "scorer": "multilabel_f1",
-        "samples": [
-          {
-            "value": 0.6666666666666666,
-            "sample_id": 1
-          },
-          {
-            "value": 1.0,
-            "sample_id": 2
-          },
-          {
-            "value": 0.5,
-            "sample_id": 3
-          },
-          {
-            "value": 0.6666666666666666,
-            "sample_id": 4
-          },
-          {
-            "value": 1.0,
-            "sample_id": 5
-          },
-          {
-            "value": 0.6666666666666666,
-            "sample_id": 6
-          },
-          {
-            "value": 0.6666666666666666,
-            "sample_id": 7
-          }
-        ]
-      }
-    ]
-  },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_m5Q7uGzLFa4peGY6wqa9zx.eval": {
-    "version": 2,
-    "status": "success",
-    "eval": {
-      "eval_id": "RGpaHNszncQrSJmMHPpnhh",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
-      "task": "task_nsabb_mini_eval_hf",
-      "task_id": "m5Q7uGzLFa4peGY6wqa9zx",
-      "task_version": 0,
-      "task_file": "local_eval.py",
-      "task_registry_name": "task_nsabb_mini_eval_hf",
-      "task_attribs": {},
-      "task_args": {},
-      "task_args_passed": {},
-      "dataset": {
-        "name": "Kamel0/nsabb-mini-eval",
-        "location": "Kamel0/nsabb-mini-eval",
-        "samples": 7,
-        "sample_ids": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
-        ],
-        "shuffled": false
-      },
-      "model": "google/gemini-1.5-pro",
-      "model_generate_config": {},
-      "model_args": {},
-      "config": {
-        "epochs": 1,
-        "epochs_reducer": [
-          "mean"
-        ],
-        "fail_on_error": true,
-        "max_tasks": 9,
-        "sandbox_cleanup": true,
-        "log_samples": true,
-        "log_realtime": true,
-        "log_images": true,
-        "score_display": true
-      },
-      "revision": {
-        "type": "git",
-        "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
-      },
-      "packages": {
-        "inspect_ai": "0.3.106"
-      },
-      "scorers": [
-        {
-          "name": "multilabel_f1",
-          "options": {},
-          "metrics": [
-            {
-              "name": "inspect_ai/accuracy",
-              "options": {}
-            }
-          ],
-          "metadata": {}
-        }
-      ]
-    },
-    "plan": {
-      "name": "plan",
-      "steps": [
-        {
-          "solver": "system_message",
-          "params": {
-            "template": "Select all that apply. ANSWER:"
-          }
-        },
-        {
-          "solver": "multiple_choice",
-          "params": {}
-        }
-      ],
-      "config": {}
-    },
-    "results": {
-      "total_samples": 7,
-      "completed_samples": 7,
-      "scores": [
-        {
-          "name": "multilabel_f1",
-          "scorer": "multilabel_f1",
-          "params": {},
-          "metrics": {
-            "accuracy": {
-              "name": "accuracy",
-              "value": 0.672108843537415,
-              "params": {}
-            }
-          }
-        }
-      ]
-    },
-    "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:23+03:00",
-      "model_usage": {
-        "google/gemini-1.5-pro": {
-          "input_tokens": 1172,
-          "output_tokens": 60,
-          "total_tokens": 1232,
-          "reasoning_tokens": 0
-        }
-      }
-    },
-    "reductions": [
-      {
-        "scorer": "multilabel_f1",
-        "samples": [
-          {
-            "value": 0.8,
-            "sample_id": 1
-          },
-          {
-            "value": 1.0,
-            "sample_id": 2
-          },
-          {
-            "value": 0.5,
-            "sample_id": 3
-          },
-          {
-            "value": 0.5714285714285715,
-            "sample_id": 4
-          },
-          {
-            "value": 0.5,
-            "sample_id": 5
-          },
-          {
-            "value": 0.6666666666666666,
-            "sample_id": 6
-          },
-          {
-            "value": 0.6666666666666666,
-            "sample_id": 7
-          }
-        ]
-      }
-    ]
-  },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_enDZCTHe3xVSeHTNbif3ks.eval": {
-    "version": 2,
-    "status": "success",
-    "eval": {
-      "eval_id": "78LHkdzxEDZeTVVdemWtK7",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
-      "task": "task_nsabb_mini_eval_hf",
-      "task_id": "enDZCTHe3xVSeHTNbif3ks",
+      "task_id": "XfuDuxn7yTHpaUNJxaADp3",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -951,7 +650,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -997,7 +696,7 @@
           "metrics": {
             "accuracy": {
               "name": "accuracy",
-              "value": 0.5714285714285714,
+              "value": 0.6619047619047619,
               "params": {}
             }
           }
@@ -1005,13 +704,13 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:22+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:39+03:00",
       "model_usage": {
         "google/gemini-2.0-flash": {
           "input_tokens": 1172,
-          "output_tokens": 56,
-          "total_tokens": 1228,
+          "output_tokens": 58,
+          "total_tokens": 1230,
           "reasoning_tokens": 0
         }
       }
@@ -1025,7 +724,7 @@
             "sample_id": 1
           },
           {
-            "value": 0.6666666666666666,
+            "value": 1.0,
             "sample_id": 2
           },
           {
@@ -1033,7 +732,7 @@
             "sample_id": 3
           },
           {
-            "value": 0.5,
+            "value": 0.8,
             "sample_id": 4
           },
           {
@@ -1052,15 +751,15 @@
       }
     ]
   },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_JfBBS3nVoeGR7ZpqaXDWg7.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_PvWwWcWYmS2NTKvfdaCU5v.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "PZjWykPdzYaoBqCwWBbTyf",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "68kKPE9d8CdxGAEYztYdbE",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "JfBBS3nVoeGR7ZpqaXDWg7",
+      "task_id": "PvWwWcWYmS2NTKvfdaCU5v",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -1101,7 +800,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -1155,8 +854,8 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:22+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:36+03:00",
       "model_usage": {
         "openai/gpt-4o": {
           "input_tokens": 1233,
@@ -1203,15 +902,316 @@
       }
     ]
   },
-  "2025-06-25T19-41-16+03-00_task-nsabb-mini-eval-hf_jJdKnoUTEHXxJDqgS6e8Ez.eval": {
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_jpuUeuzFnkKHM4hssyQut7.eval": {
     "version": 2,
     "status": "success",
     "eval": {
-      "eval_id": "asvY77Ab2qEFMet84ZP5bx",
-      "run_id": "Nzm3qKSTxNBJBZ53WHK6WT",
-      "created": "2025-06-25T19:41:16+03:00",
+      "eval_id": "2ikjNB5ZEwU67nwMdXoYjZ",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
       "task": "task_nsabb_mini_eval_hf",
-      "task_id": "jJdKnoUTEHXxJDqgS6e8Ez",
+      "task_id": "jpuUeuzFnkKHM4hssyQut7",
+      "task_version": 0,
+      "task_file": "local_eval.py",
+      "task_registry_name": "task_nsabb_mini_eval_hf",
+      "task_attribs": {},
+      "task_args": {},
+      "task_args_passed": {},
+      "dataset": {
+        "name": "Kamel0/nsabb-mini-eval",
+        "location": "Kamel0/nsabb-mini-eval",
+        "samples": 7,
+        "sample_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "shuffled": false
+      },
+      "model": "google/gemini-1.5-pro",
+      "model_generate_config": {},
+      "model_args": {},
+      "config": {
+        "epochs": 1,
+        "epochs_reducer": [
+          "mean"
+        ],
+        "fail_on_error": true,
+        "max_tasks": 9,
+        "sandbox_cleanup": true,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "git@github.com:kamelzero/inspect-nsabb.git",
+        "commit": "4aa456f"
+      },
+      "packages": {
+        "inspect_ai": "0.3.106"
+      },
+      "scorers": [
+        {
+          "name": "multilabel_f1",
+          "options": {},
+          "metrics": [
+            {
+              "name": "inspect_ai/accuracy",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Select all that apply. ANSWER:"
+          }
+        },
+        {
+          "solver": "multiple_choice",
+          "params": {}
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 7,
+      "completed_samples": 7,
+      "scores": [
+        {
+          "name": "multilabel_f1",
+          "scorer": "multilabel_f1",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 0.6244897959183674,
+              "params": {}
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:36+03:00",
+      "model_usage": {
+        "google/gemini-1.5-pro": {
+          "input_tokens": 1172,
+          "output_tokens": 62,
+          "total_tokens": 1234,
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "reductions": [
+      {
+        "scorer": "multilabel_f1",
+        "samples": [
+          {
+            "value": 0.8,
+            "sample_id": 1
+          },
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 2
+          },
+          {
+            "value": 0.5,
+            "sample_id": 3
+          },
+          {
+            "value": 0.5714285714285715,
+            "sample_id": 4
+          },
+          {
+            "value": 0.5,
+            "sample_id": 5
+          },
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 6
+          },
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 7
+          }
+        ]
+      }
+    ]
+  },
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_RGxHLwKoqrQvWP73k6WSqe.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_id": "7uhscFP2UBthohwU3WenPj",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
+      "task": "task_nsabb_mini_eval_hf",
+      "task_id": "RGxHLwKoqrQvWP73k6WSqe",
+      "task_version": 0,
+      "task_file": "local_eval.py",
+      "task_registry_name": "task_nsabb_mini_eval_hf",
+      "task_attribs": {},
+      "task_args": {},
+      "task_args_passed": {},
+      "dataset": {
+        "name": "Kamel0/nsabb-mini-eval",
+        "location": "Kamel0/nsabb-mini-eval",
+        "samples": 7,
+        "sample_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "shuffled": false
+      },
+      "model": "anthropic/claude-3-7-sonnet-latest",
+      "model_generate_config": {},
+      "model_args": {},
+      "config": {
+        "epochs": 1,
+        "epochs_reducer": [
+          "mean"
+        ],
+        "fail_on_error": true,
+        "max_tasks": 9,
+        "sandbox_cleanup": true,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "git@github.com:kamelzero/inspect-nsabb.git",
+        "commit": "4aa456f"
+      },
+      "packages": {
+        "inspect_ai": "0.3.106"
+      },
+      "scorers": [
+        {
+          "name": "multilabel_f1",
+          "options": {},
+          "metrics": [
+            {
+              "name": "inspect_ai/accuracy",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "system_message",
+          "params": {
+            "template": "Select all that apply. ANSWER:"
+          }
+        },
+        {
+          "solver": "multiple_choice",
+          "params": {}
+        }
+      ],
+      "config": {}
+    },
+    "results": {
+      "total_samples": 7,
+      "completed_samples": 7,
+      "scores": [
+        {
+          "name": "multilabel_f1",
+          "scorer": "multilabel_f1",
+          "params": {},
+          "metrics": {
+            "accuracy": {
+              "name": "accuracy",
+              "value": 0.8095238095238095,
+              "params": {}
+            }
+          }
+        }
+      ]
+    },
+    "stats": {
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:35+03:00",
+      "model_usage": {
+        "anthropic/claude-3-7-sonnet-latest": {
+          "input_tokens": 1423,
+          "output_tokens": 49,
+          "total_tokens": 1472,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0
+        }
+      }
+    },
+    "reductions": [
+      {
+        "scorer": "multilabel_f1",
+        "samples": [
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 1
+          },
+          {
+            "value": 1.0,
+            "sample_id": 2
+          },
+          {
+            "value": 1.0,
+            "sample_id": 3
+          },
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 4
+          },
+          {
+            "value": 1.0,
+            "sample_id": 5
+          },
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 6
+          },
+          {
+            "value": 0.6666666666666666,
+            "sample_id": 7
+          }
+        ]
+      }
+    ]
+  },
+  "2025-06-26T12-03-30+03-00_task-nsabb-mini-eval-hf_EFQN6S9uLASWMGoU3agye4.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_id": "95bA9XttTvppSfiGakaFfg",
+      "run_id": "JLLdJbkPiqL59tMbseqk9T",
+      "created": "2025-06-26T12:03:30+03:00",
+      "task": "task_nsabb_mini_eval_hf",
+      "task_id": "EFQN6S9uLASWMGoU3agye4",
       "task_version": 0,
       "task_file": "local_eval.py",
       "task_registry_name": "task_nsabb_mini_eval_hf",
@@ -1252,7 +1252,7 @@
       "revision": {
         "type": "git",
         "origin": "git@github.com:kamelzero/inspect-nsabb.git",
-        "commit": "357b20e"
+        "commit": "4aa456f"
       },
       "packages": {
         "inspect_ai": "0.3.106"
@@ -1306,13 +1306,13 @@
       ]
     },
     "stats": {
-      "started_at": "2025-06-25T19:41:16+03:00",
-      "completed_at": "2025-06-25T19:41:21+03:00",
+      "started_at": "2025-06-26T12:03:30+03:00",
+      "completed_at": "2025-06-26T12:03:33+03:00",
       "model_usage": {
         "mistral/mistral-large-latest": {
           "input_tokens": 1436,
-          "output_tokens": 62,
-          "total_tokens": 1498
+          "output_tokens": 59,
+          "total_tokens": 1495
         }
       }
     },

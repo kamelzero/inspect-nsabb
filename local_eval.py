@@ -1,44 +1,46 @@
+"""
+This script is used to evaluate the model on the NSABB-mini-eval dataset.
+Log files are saved in the logs-local directory.
+"""
+
 from inspect_ai import Task, task
-from inspect_ai.dataset import MemoryDataset, Sample
-from inspect_ai.scorer import f1, Score, scorer
 from inspect_ai.solver import multiple_choice, system_message
-from inspect_ai.solver import TaskState
-from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai import eval_set
-from multilabel_f1 import multilabel_f1
 from inspect_ai.dataset import hf_dataset
-import json
+from inspect_ai.log import list_eval_logs, read_eval_log_samples
+from multilabel_f1 import multilabel_f1
+from log_utils import structured_eval_samples_io
 import os
+import pandas as pd
+import questionary
+import shutil
+import json
 
-# with open('task_data.json') as fp:
-#     task_data = json.load(fp)
-
-# @task
-# def task_nsabb_mini_eval(ind=0):
-#     return Task(
-#         dataset=MemoryDataset([
-#             Sample(
-#                 input=task_data[ind]["input"],
-#                 choices=task_data[ind]["choices"],
-#                 target=task_data[ind]['target']
-#             ),
-#         ]),
-#         solver=[system_message("Select all that apply. ANSWER:"), multiple_choice()],
-#         scorer=multilabel_f1()
-#     )
+with open("hf_config.json", "r") as f:
+    hf_config = json.load(f)
 
 @task
 def task_nsabb_mini_eval_hf():
     return Task(
         dataset=hf_dataset(
-            path="Kamel0/nsabb-mini-eval",
+            path=hf_config["hf_dataset"],
             split="validation",
         ),
         solver=[system_message("Select all that apply. ANSWER:"), multiple_choice()],
         scorer=multilabel_f1()
     )
 
-os.system("rm -rf ./logs-local")
+logs_dir = "./logs-local"
+
+if os.path.exists(logs_dir):
+    answer = questionary.confirm(f"Do you really want to delete '{logs_dir}'?").ask()
+    if answer:
+        shutil.rmtree(logs_dir)
+        print("Deleted.")
+    else:
+        print("Aborted.")
+        exit(1)
+
 success, logs = eval_set(
    task_nsabb_mini_eval_hf(), #[task_nsabb_mini_eval(ind=ind) for ind in range(len(task_data))],
    model=[
@@ -55,10 +57,14 @@ success, logs = eval_set(
    log_dir="logs-local"
 )
 
-from inspect_ai.log import list_eval_logs, read_eval_log_samples
 results = list_eval_logs("logs-local")
-eval_filename = results[0].name
-logsamples_iter = read_eval_log_samples(eval_filename)
-log_samples = [sample.model_dump() for sample in logsamples_iter]
-with open("logs-local/eval_samples.json", "w") as fp:
-    json.dump(log_samples, fp, indent=4)
+structured_samples_lst = []
+for ind, result in enumerate(results):
+    eval_filename = result.name
+    logsamples_iter = read_eval_log_samples(eval_filename)
+    log_samples = [sample.model_dump() for sample in logsamples_iter]
+    structured_samples_lst.append(structured_eval_samples_io(log_samples))
+
+csv_fn = f"{logs_dir}/structured_samples.csv"
+pd.DataFrame(structured_samples_lst).to_csv(csv_fn, index=False)
+print(f"Results saved to {csv_fn}")

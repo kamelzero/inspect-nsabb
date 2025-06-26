@@ -1,0 +1,64 @@
+task_index,model,answer,target
+0,models/gemini-2.5-pro-preview-05-06,['E'],"['E', 'F']"
+1,models/gemini-2.5-pro-preview-05-06,['H'],['H']
+2,models/gemini-2.5-pro-preview-05-06,"['E', 'B', 'G', 'F']",['F']
+3,models/gemini-2.5-pro-preview-05-06,['H'],"['B', 'H']"
+4,models/gemini-2.5-pro-preview-05-06,['G'],['G']
+5,models/gemini-2.5-pro-preview-05-06,['C'],"['C', 'D']"
+6,models/gemini-2.5-pro-preview-05-06,['C'],"['C', 'D']"
+0,o1,"['D', 'C', 'E', 'H', 'G', 'A', 'F']","['E', 'F']"
+1,o1,"['D', 'C', 'E', 'H', 'G', 'A', 'F']",['H']
+2,o1,"['D', 'C', 'E', 'H', 'G', 'A', 'F']",['F']
+3,o1,"['B', 'H']","['B', 'H']"
+4,o1,"['D', 'C', 'E', 'H', 'G', 'A', 'F']",['G']
+5,o1,['C'],"['C', 'D']"
+6,o1,"['C', 'D']","['C', 'D']"
+0,models/gemini-2.5-flash-preview-05-20,['E'],"['E', 'F']"
+1,models/gemini-2.5-flash-preview-05-20,['H'],['H']
+2,models/gemini-2.5-flash-preview-05-20,['F'],['F']
+3,models/gemini-2.5-flash-preview-05-20,['H'],"['B', 'H']"
+4,models/gemini-2.5-flash-preview-05-20,['G'],['G']
+5,models/gemini-2.5-flash-preview-05-20,['C'],"['C', 'D']"
+6,models/gemini-2.5-flash-preview-05-20,['C'],"['C', 'D']"
+0,claude-sonnet-4-20250514,"['C', 'D', 'E', 'H', 'G', 'B', 'A', 'F']","['E', 'F']"
+1,claude-sonnet-4-20250514,"['C', 'D', 'E', 'H', 'G', 'B', 'A', 'F']",['H']
+2,claude-sonnet-4-20250514,"['D', 'C', 'E', 'H', 'G', 'B', 'A', 'F']",['F']
+3,claude-sonnet-4-20250514,"['D', 'C', 'E', 'H', 'B', 'G', 'A', 'F']","['B', 'H']"
+4,claude-sonnet-4-20250514,"['C', 'D', 'E', 'H', 'G', 'B', 'A', 'F']",['G']
+5,claude-sonnet-4-20250514,"['D', 'C', 'E', 'H', 'G', 'B', 'A', 'F']","['C', 'D']"
+6,claude-sonnet-4-20250514,"['D', 'C', 'E', 'H', 'B', 'G', 'A', 'F']","['C', 'D']"
+0,gemini-2.0-flash,"['E', 'B']","['E', 'F']"
+1,gemini-2.0-flash,['H'],['H']
+2,gemini-2.0-flash,"['E', 'B', 'F']",['F']
+3,gemini-2.0-flash,"['B', 'G', 'H']","['B', 'H']"
+4,gemini-2.0-flash,"['B', 'G', 'F']",['G']
+5,gemini-2.0-flash,"['B', 'C', 'D', 'G']","['C', 'D']"
+6,gemini-2.0-flash,"['B', 'C', 'D', 'G']","['C', 'D']"
+0,gpt-4o-2024-08-06,['E'],"['E', 'F']"
+1,gpt-4o-2024-08-06,['H'],['H']
+2,gpt-4o-2024-08-06,['F'],['F']
+3,gpt-4o-2024-08-06,['H'],"['B', 'H']"
+4,gpt-4o-2024-08-06,['G'],['G']
+5,gpt-4o-2024-08-06,['C'],"['C', 'D']"
+6,gpt-4o-2024-08-06,['C'],"['C', 'D']"
+0,gemini-1.5-pro-002,"['E', 'B', 'F']","['E', 'F']"
+1,gemini-1.5-pro-002,"['B', 'H']",['H']
+2,gemini-1.5-pro-002,"['B', 'G', 'F']",['F']
+3,gemini-1.5-pro-002,"['E', 'B', 'G', 'H', 'F']","['B', 'H']"
+4,gemini-1.5-pro-002,"['B', 'G', 'F']",['G']
+5,gemini-1.5-pro-002,"['B', 'C', 'D', 'G']","['C', 'D']"
+6,gemini-1.5-pro-002,"['B', 'C', 'D', 'G']","['C', 'D']"
+0,claude-3-7-sonnet-latest,['E'],"['E', 'F']"
+1,claude-3-7-sonnet-latest,['H'],['H']
+2,claude-3-7-sonnet-latest,['F'],['F']
+3,claude-3-7-sonnet-latest,['H'],"['B', 'H']"
+4,claude-3-7-sonnet-latest,['G'],['G']
+5,claude-3-7-sonnet-latest,['C'],"['C', 'D']"
+6,claude-3-7-sonnet-latest,['C'],"['C', 'D']"
+0,mistral-large-latest,"['E', 'B', 'F']","['E', 'F']"
+1,mistral-large-latest,"['B', 'H']",['H']
+2,mistral-large-latest,"['E', 'B', 'F']",['F']
+3,mistral-large-latest,"['B', 'H']","['B', 'H']"
+4,mistral-large-latest,"['B', 'G']",['G']
+5,mistral-large-latest,"['B', 'C', 'D']","['C', 'D']"
+6,mistral-large-latest,"['B', 'C', 'D']","['C', 'D']"

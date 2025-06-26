@@ -1,18 +1,16 @@
 from inspect_ai.scorer import Score, scorer
 from inspect_ai.solver import TaskState
 from inspect_ai.scorer import Score, Target, accuracy, scorer
+from log_utils import strip_answer, normalize_answer
 
 @scorer(metrics=[accuracy()])
 def multilabel_f1():
     async def score(state: TaskState, target: Target):
-        def normalize(text: str):
-            return set(s for s in text.upper() if s in {"A", "B", "C", "D", "E", "F", "G", "H"})
-
-        model_output = state.output.completion.strip().replace("ANSWER:", "").strip()
+        model_output = strip_answer(state.output.completion)
         target_text = target.text.strip()
 
-        model_set = normalize(model_output)
-        target_set = normalize(target_text)
+        model_set = normalize_answer(model_output)
+        target_set = normalize_answer(target_text)
 
         print(f"Model output: {model_output} | Target: {target_text}")
         print(f"Model output normed: {model_set} | Target normed: {target_set}")

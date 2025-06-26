@@ -7,3 +7,5 @@ anthropic
 google-genai
 mistralai
 matplotlib
+seaborn
+questionary

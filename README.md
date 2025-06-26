@@ -1,8 +1,18 @@
-# Inspect - AI Agent Evaluation
+# Inspect AI Agent Evaluation
 
-See: https://inspect.aisi.org.uk
+## Overview
 
-See: https://osp.od.nih.gov/wp-content/uploads/2023/03/NSABB-Final-Report-Proposed-Biosecurity-Oversight-Framework-for-the-Future-of-Science.pdf
+Explore the use of the Inspect AI framework and for evaluating biosecurity data.
+ 
+* AI Security Institute - Inspect AI framework for large language model evaluations
+    * https://inspect.aisi.org.uk
+* Proposed Biosecurity Oversight Framework for the Future of Science
+    * https://osp.od.nih.gov/wp-content/uploads/2023/03/NSABB-Final-Report-Proposed-Biosecurity-Oversight-Framework-for-the-Future-of-Science.pdf
+    * Dual Use Research of Concern (DURC) categories
+
+## Data
+
+Construct a dataset of biosecurity papers rated by DURC.
 
 DURC Policy Scope – Categories of experiments
 1. Enhance the harmful consequences of the agent or toxin;
@@ -16,6 +26,9 @@ detection methodologies;
 6. Enhance the susceptibility of a host population to the agent or toxin; or
 7. Generate or reconstitute an eradicated or extinct agent or toxin listed in the policy.
 
+A sample dataset was constructed with citations: `task_data.json`
+Each paper corresponds to 1 or more DURC categories. 
+
 ## Install
 
 ```
@@ -27,7 +40,16 @@ uv pip install -r requirements.txt
 ## Run
 
 ```
-inspect eval nsabb_eval.py --model google/gemini-1.5-pro
+python local_eval.py
 ```
+This outputs JSON files to `logs-local`, with F1 scores on the eval dataset for each of the models.
 
-You can also try other models (e.g., anthropic/claude-3-opus, google/gemini-1.5-pro) for comparison.
+The file currently evalutes 9 models from:
+* Google
+* Anthropic
+* OpenAI
+* Mistral
+
+## Analysis
+
+See: `analyze.ipynb`
